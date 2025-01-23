@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Job Board</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#employers">Employer Dashboard</a>
+      <a href="#candidates">Candidate Dashboard</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to the Job Board</h2>
+    <p>Find your dream job or post your openings here.</p>
+  </section>
+
+  <section id="jobs">
+    <h2>Job Listings</h2>
+    <div id="job-listings"></div>
+  </section>
+
+  <section id="employers">
+    <h2>Employer Dashboard</h2>
+    <form id="post-job-form">
+      <label>Job Title: <input type="text" id="job-title"></label>
+      <label>Company: <input type="text" id="job-company"></label>
+      <label>Description: <textarea id="job-description"></textarea></label>
+      <button type="submit">Post Job</button>
+    </form>
+  </section>
+
+  <section id="candidates">
+    <h2>Candidate Dashboard</h2>
+    <form id="apply-job-form">
+      <label>Full Name: <input type="text" id="candidate-name"></label>
+      <label>Email: <input type="email" id="candidate-email"></label>
+      <label>Resume: <input type="file" id="candidate-resume"></label>
+      <button type="submit">Apply for Job</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Job Board. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
